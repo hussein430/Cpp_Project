@@ -3,7 +3,8 @@ using namespace std;
 
 class calculater
 {
-    int num1 , num2 ;
+    int num1 ;
+    int num2 ;
 
 public:
     calculater ()
@@ -11,7 +12,7 @@ public:
         cout << "Enter the first number: " ; cin >> num1 ;
         cout << "Enter the second number: " ; cin >> num2 ;
     }
-    void calc()
+    void print()
     {
         cout << num1 << " + " << num2 << " = " << num1+num2 << "\n" ;
         cout << num1 << " * " << num2 << " = " << num1*num2 << "\n" ;
@@ -25,7 +26,7 @@ public:
 int main()
 {
     calculater c1 ;
-    c1.calc() ;
+    c1.print() ;
 
     cout <<"\n" ;
     system("pause") ;
